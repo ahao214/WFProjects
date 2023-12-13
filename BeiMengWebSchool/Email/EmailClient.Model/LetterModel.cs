@@ -9,7 +9,7 @@ namespace EmailClient.Model
     /// <summary>
     /// 信件类
     /// </summary>
-    public class Letter
+    public class LetterModel
     {
         /// <summary>
         /// 邮件编号
