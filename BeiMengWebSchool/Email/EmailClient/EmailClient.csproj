@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmailClient.BLL\EmailClient.BLL.csproj">
+      <Project>{1bb28d12-2e21-42ce-8004-dff789efd65b}</Project>
+      <Name>EmailClient.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

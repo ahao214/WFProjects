@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmailClient.BLL
+namespace EmailClient.Model
 {
-    public class LetterBLL
+    public class Class1
     {
-
-
-
     }
 }
