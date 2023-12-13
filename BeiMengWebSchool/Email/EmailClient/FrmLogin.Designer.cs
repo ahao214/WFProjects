@@ -61,13 +61,16 @@
             this.txtAccount.Name = "txtAccount";
             this.txtAccount.Size = new System.Drawing.Size(220, 28);
             this.txtAccount.TabIndex = 2;
+            this.txtAccount.Text = "admin";
             // 
             // txtPwd
             // 
             this.txtPwd.Location = new System.Drawing.Point(119, 104);
             this.txtPwd.Name = "txtPwd";
+            this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(220, 28);
             this.txtPwd.TabIndex = 2;
+            this.txtPwd.Text = "123";
             // 
             // label2
             // 
