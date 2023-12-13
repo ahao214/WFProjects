@@ -16,5 +16,16 @@ namespace EmailClient
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// 新增按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            FrmWriter frmWriter = new FrmWriter();
+            frmWriter.ShowDialog();
+        }
     }
 }

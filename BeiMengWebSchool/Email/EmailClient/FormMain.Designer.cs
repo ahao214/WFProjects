@@ -70,19 +70,19 @@
             this.打开ToolStripMenuItem,
             this.关闭ToolStripMenuItem});
             this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
-            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
+            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(62, 32);
             this.文件ToolStripMenuItem.Text = "文件";
             // 
             // 编辑ToolStripMenuItem
             // 
             this.编辑ToolStripMenuItem.Name = "编辑ToolStripMenuItem";
-            this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
+            this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(62, 32);
             this.编辑ToolStripMenuItem.Text = "编辑";
             // 
             // 视图ToolStripMenuItem
             // 
             this.视图ToolStripMenuItem.Name = "视图ToolStripMenuItem";
-            this.视图ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
+            this.视图ToolStripMenuItem.Size = new System.Drawing.Size(62, 32);
             this.视图ToolStripMenuItem.Text = "视图";
             // 
             // 打开ToolStripMenuItem
@@ -116,6 +116,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(50, 28);
             this.toolStripButton1.Text = "新增";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // statusStrip1
             // 
