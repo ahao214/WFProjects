@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace EmailClient
 {
@@ -15,6 +16,18 @@ namespace EmailClient
         public FrmLogin()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// 登录按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            FormMain frmMain = new FormMain();
+            frmMain.Show();
+            this.Hide();
         }
     }
 }
