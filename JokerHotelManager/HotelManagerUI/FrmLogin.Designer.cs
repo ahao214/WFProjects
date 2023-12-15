@@ -63,21 +63,21 @@
             // 
             this.TxtLoginId.Location = new System.Drawing.Point(182, 118);
             this.TxtLoginId.Name = "TxtLoginId";
-            this.TxtLoginId.Size = new System.Drawing.Size(236, 28);
+            this.TxtLoginId.Size = new System.Drawing.Size(236, 35);
             this.TxtLoginId.TabIndex = 2;
             // 
             // TxtLoginPwd
             // 
             this.TxtLoginPwd.Location = new System.Drawing.Point(182, 168);
             this.TxtLoginPwd.Name = "TxtLoginPwd";
-            this.TxtLoginPwd.Size = new System.Drawing.Size(236, 28);
+            this.TxtLoginPwd.Size = new System.Drawing.Size(236, 35);
             this.TxtLoginPwd.TabIndex = 3;
             // 
             // TxtCode
             // 
             this.TxtCode.Location = new System.Drawing.Point(181, 219);
             this.TxtCode.Name = "TxtCode";
-            this.TxtCode.Size = new System.Drawing.Size(145, 28);
+            this.TxtCode.Size = new System.Drawing.Size(145, 35);
             this.TxtCode.TabIndex = 4;
             // 
             // label1
@@ -85,7 +85,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(53, 118);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 18);
+            this.label1.Size = new System.Drawing.Size(82, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "用户名";
             // 
@@ -94,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(53, 178);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 18);
+            this.label2.Size = new System.Drawing.Size(70, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "密 码";
             // 
@@ -103,7 +103,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(53, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 18);
+            this.label3.Size = new System.Drawing.Size(82, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "验证码";
             // 
@@ -112,15 +112,13 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(179, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 18);
+            this.label4.Size = new System.Drawing.Size(154, 24);
             this.label4.TabIndex = 8;
             this.label4.Text = "酒店管理系统";
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Turquoise;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(637, 426);
             this.Controls.Add(this.label4);
@@ -132,10 +130,9 @@
             this.Controls.Add(this.TxtLoginId);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnLogin);
-            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "FrmLogin";            
+            this.Text = "";            
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

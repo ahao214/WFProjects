@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sunny.UI;
 
 namespace HotelManagerUI
 {
-    public partial class FrmLogin : Form
+    public partial class FrmLogin : UIForm
     {
         #region 构造函数
         /// <summary>
