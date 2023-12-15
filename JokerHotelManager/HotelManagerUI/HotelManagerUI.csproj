@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{221CC8DE-1BF4-4A53-93A3-830DD6A32207}</ProjectGuid>
+    <ProjectGuid>{1BDA62AA-4CC2-493D-BC2B-080026495503}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>HotelManagerUI</RootNamespace>
     <AssemblyName>HotelManagerUI</AssemblyName>
@@ -59,8 +59,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,82 +81,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Res\AquaOS.ico" />
-    <Content Include="Res\Blue Glass Apple HardDrive.ico" />
-    <Content Include="Res\Images\BG2.PNG" />
-    <Content Include="Res\Images\BG3.PNG" />
-    <Content Include="Res\OS10.ico" />
-    <Content Include="Res\OS11.ico" />
-    <Content Include="Res\OS12.ico" />
-    <Content Include="Res\OS13.ico" />
-    <Content Include="Res\OS14.ico" />
-    <Content Include="Res\OS15.ico" />
-    <Content Include="Res\OS2.ico" />
-    <Content Include="Res\OS3.ico" />
-    <Content Include="Res\OS4.ico" />
-    <Content Include="Res\OS5.ico" />
-    <Content Include="Res\OS6.ico" />
-    <Content Include="Res\OS7.ico" />
-    <Content Include="Res\OS8.ico" />
-    <Content Include="Res\OS9.ico" />
-    <Content Include="Res\Osx01.ico" />
-    <Content Include="Res\Osx03.ico" />
-    <Content Include="Res\Osx04.ico" />
-    <Content Include="Res\Osx05.ico" />
-    <Content Include="Res\Osx06.ico" />
-    <Content Include="Res\Osx07.ico" />
-    <Content Include="Res\Osx08.ico" />
-    <Content Include="Res\Osx09.ico" />
-    <Content Include="Res\Osx10.ico" />
-    <Content Include="Res\Osx11.ico" />
-    <Content Include="Res\Osx12.ico" />
-    <Content Include="Res\Osx13.ico" />
-    <Content Include="Res\Osx14.ico" />
-    <Content Include="Res\Osx15.ico" />
-    <Content Include="Res\Osx16.ico" />
-    <Content Include="Res\Osx17.ico" />
-    <Content Include="Res\Osx18.ico" />
-    <Content Include="Res\Osx19.ico" />
-    <Content Include="Res\Osx20.ico" />
-    <Content Include="Res\Osx21.ico" />
-    <Content Include="Res\Osx22.ico" />
-    <Content Include="Res\Osx23.ico" />
-    <Content Include="Res\Osx24.ico" />
-    <Content Include="Res\Osx25.ico" />
-    <Content Include="Res\Osx26.ico" />
-    <Content Include="Res\Osx27.ico" />
-    <Content Include="Res\Osx28.ico" />
-    <Content Include="Res\Osx29.ico" />
-    <Content Include="Res\Osx30.ico" />
-    <Content Include="Res\Osx31.ico" />
-    <Content Include="Res\Osx32.ico" />
-    <Content Include="Res\Osx33.ico" />
-    <Content Include="Res\Osx34.ico" />
-    <Content Include="Res\Osx35.ico" />
-    <Content Include="Res\Osx36.ico" />
-    <Content Include="Res\Osx37.ico" />
-    <Content Include="Res\Osx38.ico" />
-    <Content Include="Res\Osx39.ico" />
-    <Content Include="Res\Osx40.ico" />
-    <Content Include="Res\Osx41.ico" />
-    <Content Include="Res\Osx42.ico" />
-    <Content Include="Res\Osx43.ico" />
-    <Content Include="Res\Osx44.ico" />
-    <Content Include="Res\Osx45.ico" />
-    <Content Include="Res\Osx46.ico" />
-    <Content Include="Res\Pictureviewer.ico" />
-    <Content Include="Res\Plain Folder.ico" />
-    <Content Include="Res\Toolbar01.ico" />
-    <Content Include="Res\Toolbar02.ico" />
-    <Content Include="Res\Toolbar03.ico" />
-    <Content Include="Res\Toolbar04.ico" />
-    <Content Include="Res\Toolbar05.ico" />
-    <Content Include="Res\Toolbar06.ico" />
-    <Content Include="Res\Toolbar07.ico" />
-    <Content Include="Res\Toolbar08.ico" />
-    <Content Include="Res\Toolbar09.ico" />
-    <Content Include="Res\Toolbar10.ico" />
-    <Content Include="Res\Toolbar11.ico" />
+    <Content Include="Res\Images\BG.PNG" />
+    <Content Include="Res\Osx.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
