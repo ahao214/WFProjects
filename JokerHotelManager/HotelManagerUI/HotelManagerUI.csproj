@@ -59,13 +59,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,6 +77,10 @@
   <ItemGroup>
     <Content Include="Res\AquaOS.ico" />
     <Content Include="Res\Blue Glass Apple HardDrive.ico" />
+    <Content Include="Res\Images\bg.PNG" />
+    <Content Include="Res\Images\BG2.PNG" />
+    <Content Include="Res\Images\BG3.PNG" />
+    <Content Include="Res\Images\GB1.PNG" />
     <Content Include="Res\OS10.ico" />
     <Content Include="Res\OS11.ico" />
     <Content Include="Res\OS12.ico" />
