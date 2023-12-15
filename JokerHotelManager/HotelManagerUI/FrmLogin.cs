@@ -12,10 +12,15 @@ namespace HotelManagerUI
 {
     public partial class FrmLogin : Form
     {
+        #region 构造函数
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public FrmLogin()
         {
             InitializeComponent();
-        }
+        } 
+        #endregion
 
         #region 窗体加载
         /// <summary>
