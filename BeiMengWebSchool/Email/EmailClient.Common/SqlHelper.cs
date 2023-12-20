@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmailClient.DAL
+namespace EmailClient.Common
 {
-    public class Class1
+    /// <summary>
+    /// 数据库帮助类
+    /// </summary>
+    public class SqlHelper
     {
+
+
     }
 }

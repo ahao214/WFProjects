@@ -44,5 +44,11 @@
     <Compile Include="LetterBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmailClient.Model\EmailClient.Model.csproj">
+      <Project>{c99c241e-33e2-4d9f-b849-f1c2c51ae193}</Project>
+      <Name>EmailClient.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

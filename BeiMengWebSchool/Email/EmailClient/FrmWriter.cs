@@ -1,4 +1,5 @@
 ﻿using EmailClient.BLL;
+using EmailClient.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,9 +27,24 @@ namespace EmailClient
         private void btnSend_Click(object sender, EventArgs e)
         {
             string title = this.txtTitle.Text.Trim();
-            string content = this .txtContent.Text.Trim();  
-            string receiver = this .txtReceiver.Text.Trim(); 
-            
+            string content = this.txtContent.Text.Trim();
+            string receiver = this.txtReceiver.Text.Trim();
+            LetterModel letterModel = new LetterModel()
+            {
+                Title = title,
+                AddTime = DateTime.Now,
+                Content = content,
+                Receiver = receiver,
+            };
+            if (LetterBLL.DealWriter(letterModel))
+            {
+                MessageBox.Show("保存成功");
+            }
+            else
+            {
+                MessageBox.Show("保存失败", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }

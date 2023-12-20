@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5EB67AAE-BB0B-4B28-AA5A-21D18E92DDF5}</ProjectGuid>
+    <ProjectGuid>{927FE7A3-0229-432D-9FE0-9C6CBD7BF0A7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmailClient.DAL</RootNamespace>
-    <AssemblyName>EmailClient.DAL</AssemblyName>
+    <RootNamespace>EmailClient.Common</RootNamespace>
+    <AssemblyName>EmailClient.Common</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,14 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LetterDAL.cs" />
+    <Compile Include="SqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EmailClient.Model\EmailClient.Model.csproj">
-      <Project>{c99c241e-33e2-4d9f-b849-f1c2c51ae193}</Project>
-      <Name>EmailClient.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelManagerUI", "..\JokerH
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hotel", "Hotel", "{5DAC173D-4444-435F-B14D-E814B92DA237}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient.Common", "..\BeiMengWebSchool\Email\EmailClient.Common\EmailClient.Common.csproj", "{927FE7A3-0229-432D-9FE0-9C6CBD7BF0A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{1BDA62AA-4CC2-493D-BC2B-080026495503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BDA62AA-4CC2-493D-BC2B-080026495503}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BDA62AA-4CC2-493D-BC2B-080026495503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927FE7A3-0229-432D-9FE0-9C6CBD7BF0A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927FE7A3-0229-432D-9FE0-9C6CBD7BF0A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927FE7A3-0229-432D-9FE0-9C6CBD7BF0A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927FE7A3-0229-432D-9FE0-9C6CBD7BF0A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{5EB67AAE-BB0B-4B28-AA5A-21D18E92DDF5} = {F671B9C4-9FAA-4668-926A-CCC486BC7D66}
 		{C99C241E-33E2-4D9F-B849-F1C2C51AE193} = {F671B9C4-9FAA-4668-926A-CCC486BC7D66}
 		{1BDA62AA-4CC2-493D-BC2B-080026495503} = {5DAC173D-4444-435F-B14D-E814B92DA237}
+		{927FE7A3-0229-432D-9FE0-9C6CBD7BF0A7} = {F671B9C4-9FAA-4668-926A-CCC486BC7D66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC23375E-E81C-4340-A244-15768D699B47}
