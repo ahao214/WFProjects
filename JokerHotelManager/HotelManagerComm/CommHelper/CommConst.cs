@@ -19,7 +19,7 @@ namespace HotelManagerComm.CommHelper
         /// <summary>
         /// 验证码字符串
         /// </summary>
-        public const string AllChar = "0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m";
+        protected const string AllChar = "0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m";
 
     }
 }
