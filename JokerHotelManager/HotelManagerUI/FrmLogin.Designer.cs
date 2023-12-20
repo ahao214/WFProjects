@@ -50,6 +50,7 @@
             this.BtnLogin.TabIndex = 0;
             this.BtnLogin.Text = "登  录";
             this.BtnLogin.UseVisualStyleBackColor = false;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // pictureBox1
             // 

@@ -108,8 +108,19 @@ namespace HotelManagerUI
             }
         }
 
+
         #endregion
 
+        #region 登录按钮事件
+        /// <summary>
+        /// 登录按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
 
+        } 
+        #endregion
     }
 }
