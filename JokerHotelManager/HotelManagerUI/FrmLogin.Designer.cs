@@ -131,8 +131,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnLogin);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmLogin";            
-            this.Text = "";            
+            this.Name = "FrmLogin";
+            this.Text = "";
+            this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 637, 426);
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
