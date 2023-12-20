@@ -65,7 +65,24 @@ namespace HotelManagerComm.CommHelper
             {
                 return _imgWidth;
             }
-        } 
+        }
+        #endregion
+
+        #region 验证码图片高度
+        /// <summary>
+        /// 验证码图片高度
+        /// </summary>
+        private int _imgHeight = 32;
+        /// <summary>
+        /// 验证码图片高度属性
+        /// </summary>
+        public int ImgHeight
+        {
+            get
+            {
+                return _imgHeight;
+            }
+        }
         #endregion
 
         #region 无参数构造函数
