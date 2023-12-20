@@ -108,7 +108,26 @@ namespace HotelManagerUI
             }
         }
 
+        #endregion
 
+        #region 验证码
+        /// <summary>
+        /// 验证码
+        /// </summary>
+        private void InitVerityCode()
+        {
+            VerifyCode code = new VerifyCode();
+            string strCode = code.StringCode;
+            PbVerifyCode.Image = code.CreateImage();
+        }
+
+        #endregion
+
+        #region 验证码点击事件
+        private void PbVerifyCode_Click(object sender, EventArgs e)
+        {
+            InitVerityCode();
+        }
         #endregion
 
         #region 登录按钮事件
@@ -120,7 +139,9 @@ namespace HotelManagerUI
         private void BtnLogin_Click(object sender, EventArgs e)
         {
 
-        } 
+        }
         #endregion
+
+
     }
 }

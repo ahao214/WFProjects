@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +31,22 @@ namespace HotelManagerComm.CommHelper
             }
         }
         #endregion
+
+        /// <summary>
+        /// 验证码字符串字段
+        /// </summary>
+        private string _stringCode = string.Empty;
+        /// <summary>
+        /// 验证码字符串属性
+        /// </summary>
+        public string StringCode
+        {
+            get
+            {
+                _stringCode = CreateRndString();
+                return _stringCode;
+            }
+        }
 
         #region 无参数构造函数
         /// <summary>
@@ -71,7 +90,7 @@ namespace HotelManagerComm.CommHelper
                 }
                 // 拿到下标
                 idx = rand.Next(0, charArr.Length);
-                if(idx== temp)
+                if (idx == temp)
                 {
                     CreateRndString();
                 }
@@ -79,6 +98,56 @@ namespace HotelManagerComm.CommHelper
                 sRndCode += charArr[idx];
             }
             return sRndCode;
+        }
+
+        #endregion
+
+
+        #region 创建验证码图片
+        /// <summary>
+        /// 创建验证码图片
+        /// </summary>
+        /// <returns></returns>
+        public Bitmap CreateImage()
+        {
+            // 没有生成随机字符串，直接退出，返回null值
+            if (string.IsNullOrEmpty(_stringCode))
+                return null;
+
+            int width = _stringCode.Length * 16; // 位图的宽度
+            int height = 32;    // 位图的高度
+            // 创建位图和初始化字符的颜色和坐标
+            Bitmap image = new Bitmap(width, height);
+            Graphics g = Graphics.FromImage(image);
+            Font font = new Font("Arial", 14, FontStyle.Bold | FontStyle.Italic);
+            Brush brush = new SolidBrush(Color.Black);
+            g.Clear(Color.White);   // 背景色
+            g.DrawString(_stringCode, font, brush, 0, 5);
+            // 随机线条
+            Pen pen = new Pen(Color.Gray, 0);
+            Random rand = new Random();
+            for (int i = 0; i < _codeLen; i++)
+            {
+                int x1 = rand.Next(0, width);
+                int y1 = rand.Next(0, height);
+                int x2 = rand.Next(0, width);
+                int y2 = rand.Next(0, height);
+                g.DrawLine(pen, x1, y1, x2, y2);
+            }
+            // 加噪点
+            for (int i = 0; i < 200; i++)
+            {
+                int x = rand.Next(0, width);
+                int y = rand.Next(0, height);
+                image.SetPixel(x, y, Color.Gray);
+            }
+            // 画边框
+            g.DrawRectangle(pen, 0, 0, width - 1, height - 1);
+
+            MemoryStream ms = new MemoryStream();
+            image.Save(ms, ImageFormat.Jpeg);
+            g.Dispose();
+            return image;
         }
 
         #endregion

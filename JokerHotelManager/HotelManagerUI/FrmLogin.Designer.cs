@@ -54,11 +54,14 @@
             // 
             // PbVerifyCode
             // 
+            this.PbVerifyCode.BackColor = System.Drawing.Color.Transparent;
+            this.PbVerifyCode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PbVerifyCode.Location = new System.Drawing.Point(337, 218);
             this.PbVerifyCode.Name = "PbVerifyCode";
             this.PbVerifyCode.Size = new System.Drawing.Size(81, 33);
             this.PbVerifyCode.TabIndex = 1;
             this.PbVerifyCode.TabStop = false;
+            this.PbVerifyCode.Click += new System.EventHandler(this.PbVerifyCode_Click);
             // 
             // TxtLoginId
             // 
