@@ -48,7 +48,7 @@ namespace HotelManagerComm.CommHelper
                 _stringCode = CreateRndString();
                 return _stringCode;
             }
-        } 
+        }
         #endregion
 
         #region 验证码图片宽度
@@ -81,6 +81,10 @@ namespace HotelManagerComm.CommHelper
             get
             {
                 return _imgHeight;
+            }
+            set
+            {
+                _imgHeight = value <= 0 ? _imgHeight : value;
             }
         }
         #endregion
