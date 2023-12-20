@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using HotelManagerComm;
 using Sunny.UI;
-
+using System.Timers;
 
 namespace HotelManagerUI
 {
@@ -39,6 +31,7 @@ namespace HotelManagerUI
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             TimeStart();
+            //StartTimer();
         }
 
         #endregion
@@ -79,11 +72,44 @@ namespace HotelManagerUI
             }
             else
             {
-                Text = CommConst.WelcomsTime + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
+                if (IsHandleCreated)
+                {
+                    Text = CommConst.WelcomsTime + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
+                }
             }
         }
 
         #endregion
+
+        #region 开始计时器
+
+        private void StartTimer()
+        {
+            System.Timers.Timer timer = new System.Timers.Timer();
+            timer.Enabled = true;   // 激活后就可以触发一个事件
+            timer.Interval = 1000;  // 一秒
+            timer.AutoReset = true; // 让一个事件引发多次
+            timer.Elapsed += new ElapsedEventHandler(ChangedFrmText);
+        }
+
+        /// <summary>
+        /// 改变窗体的Text值
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ChangedFrmText(object sender, ElapsedEventArgs e)
+        {
+            if (IsHandleCreated)
+            {
+                this.BeginInvoke(new Action(() =>
+                {
+                    Text = CommConst.WelcomsTime + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
+                }));
+            }
+        }
+
+        #endregion
+
 
     }
 }
