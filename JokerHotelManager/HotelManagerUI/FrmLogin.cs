@@ -16,6 +16,10 @@ namespace HotelManagerUI
 {
     public partial class FrmLogin : UIForm
     {
+        #region 时间字符串
+        private string _TimesString = DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
+        #endregion
+
         #region 构造函数
         /// <summary>
         /// 构造函数
@@ -34,11 +38,7 @@ namespace HotelManagerUI
         /// <param name="e"></param>
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            //CheckForIllegalCrossThreadCalls = false; // 建议尽量不要加这句话来解决
-
             TimeStart();
-
-            //Text = "欢迎使用酒店管理系统 当前时间是:" + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
         }
 
         #endregion
@@ -49,7 +49,7 @@ namespace HotelManagerUI
         /// </summary>
         private void TimeStart()
         {
-            Text = CommConst.WelcomsTime + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
+            Text = CommConst.WelcomsTime + _TimesString;
             // 定义一个线程
             Thread thread = new Thread(new ThreadStart(GetTimes));
             thread.IsBackground = true;
