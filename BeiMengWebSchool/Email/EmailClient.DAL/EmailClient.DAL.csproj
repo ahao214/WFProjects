@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmailClient.Common\EmailClient.Common.csproj">
+      <Project>{927fe7a3-0229-432d-9fe0-9c6cbd7bf0a7}</Project>
+      <Name>EmailClient.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EmailClient.Model\EmailClient.Model.csproj">
       <Project>{c99c241e-33e2-4d9f-b849-f1c2c51ae193}</Project>
       <Name>EmailClient.Model</Name>
