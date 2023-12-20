@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.BtnLogin = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PbVerifyCode = new System.Windows.Forms.PictureBox();
             this.TxtLoginId = new System.Windows.Forms.TextBox();
             this.TxtLoginPwd = new System.Windows.Forms.TextBox();
-            this.TxtCode = new System.Windows.Forms.TextBox();
+            this.TxtVerifyCode = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbVerifyCode)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnLogin
@@ -52,13 +52,13 @@
             this.BtnLogin.UseVisualStyleBackColor = false;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
-            // pictureBox1
+            // PbVerifyCode
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(337, 218);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(81, 33);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.PbVerifyCode.Location = new System.Drawing.Point(337, 218);
+            this.PbVerifyCode.Name = "PbVerifyCode";
+            this.PbVerifyCode.Size = new System.Drawing.Size(81, 33);
+            this.PbVerifyCode.TabIndex = 1;
+            this.PbVerifyCode.TabStop = false;
             // 
             // TxtLoginId
             // 
@@ -71,15 +71,16 @@
             // 
             this.TxtLoginPwd.Location = new System.Drawing.Point(182, 168);
             this.TxtLoginPwd.Name = "TxtLoginPwd";
+            this.TxtLoginPwd.PasswordChar = '*';
             this.TxtLoginPwd.Size = new System.Drawing.Size(236, 35);
             this.TxtLoginPwd.TabIndex = 3;
             // 
-            // TxtCode
+            // TxtVerifyCode
             // 
-            this.TxtCode.Location = new System.Drawing.Point(181, 219);
-            this.TxtCode.Name = "TxtCode";
-            this.TxtCode.Size = new System.Drawing.Size(145, 35);
-            this.TxtCode.TabIndex = 4;
+            this.TxtVerifyCode.Location = new System.Drawing.Point(181, 219);
+            this.TxtVerifyCode.Name = "TxtVerifyCode";
+            this.TxtVerifyCode.Size = new System.Drawing.Size(145, 35);
+            this.TxtVerifyCode.TabIndex = 4;
             // 
             // label1
             // 
@@ -126,17 +127,17 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtCode);
+            this.Controls.Add(this.TxtVerifyCode);
             this.Controls.Add(this.TxtLoginPwd);
             this.Controls.Add(this.TxtLoginId);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PbVerifyCode);
             this.Controls.Add(this.BtnLogin);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.Text = "";
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 637, 426);
             this.Load += new System.EventHandler(this.FrmLogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbVerifyCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,10 +146,10 @@
         #endregion
 
         private System.Windows.Forms.Button BtnLogin;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PbVerifyCode;
         private System.Windows.Forms.TextBox TxtLoginId;
         private System.Windows.Forms.TextBox TxtLoginPwd;
-        private System.Windows.Forms.TextBox TxtCode;
+        private System.Windows.Forms.TextBox TxtVerifyCode;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

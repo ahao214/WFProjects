@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading;
-using HotelManagerComm;
+using HotelManagerComm.CommHelper;
 using Sunny.UI;
 using System.Timers;
 

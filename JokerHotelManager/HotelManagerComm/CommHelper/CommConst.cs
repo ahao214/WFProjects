@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HotelManagerComm
+namespace HotelManagerComm.CommHelper
 {
     /// <summary>
     /// 抽象常量类
@@ -13,10 +13,13 @@ namespace HotelManagerComm
     {
 
         /// <summary>
-        /// 时间
+        /// 酒店欢迎字符串
         /// </summary>
         public const string WelcomsTime = "欢迎使用酒店管理系统 当前时间是:";
-
+        /// <summary>
+        /// 验证码字符串
+        /// </summary>
+        public const string AllChar = "0,1,2,3,4,5,6,7,8,9,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m";
 
     }
 }
