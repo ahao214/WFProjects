@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,6 +33,7 @@ namespace HotelManagerComm.CommHelper
         }
         #endregion
 
+        #region 验证码字符串
         /// <summary>
         /// 验证码字符串字段
         /// </summary>
@@ -46,7 +48,25 @@ namespace HotelManagerComm.CommHelper
                 _stringCode = CreateRndString();
                 return _stringCode;
             }
-        }
+        } 
+        #endregion
+
+        #region 验证码图片宽度
+        /// <summary>
+        /// 验证码图片宽度
+        /// </summary>
+        private int _imgWidth = 80;
+        /// <summary>
+        /// 验证码图片宽度属性
+        /// </summary>
+        public int ImgWidth
+        {
+            get
+            {
+                return _imgWidth;
+            }
+        } 
+        #endregion
 
         #region 无参数构造函数
         /// <summary>

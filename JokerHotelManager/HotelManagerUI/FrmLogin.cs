@@ -116,7 +116,7 @@ namespace HotelManagerUI
         /// </summary>
         private void InitVerityCode()
         {
-            VerifyCode code = new VerifyCode();
+            VerifyCode code = new VerifyCode(1);
             string strCode = code.StringCode;
             PbVerifyCode.Image = code.CreateImage();
         }
