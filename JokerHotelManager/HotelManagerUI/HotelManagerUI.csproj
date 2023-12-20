@@ -93,5 +93,11 @@
     <Content Include="Res\Images\BG.PNG" />
     <Content Include="Res\Osx.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HotelManagerComm\HotelManagerComm.csproj">
+      <Project>{2355b8b4-6b2c-4427-b9b1-b1aeacf059c9}</Project>
+      <Name>HotelManagerComm</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

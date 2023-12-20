@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HotelManagerComm;
 using Sunny.UI;
+
 
 namespace HotelManagerUI
 {
@@ -47,7 +49,7 @@ namespace HotelManagerUI
         /// </summary>
         private void TimeStart()
         {
-            Text = "欢迎使用酒店管理系统 当前时间是:" + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
+            Text = CommConst.WelcomsTime + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
             // 定义一个线程
             Thread thread = new Thread(new ThreadStart(GetTimes));
             thread.IsBackground = true;
@@ -77,7 +79,7 @@ namespace HotelManagerUI
             }
             else
             {
-                Text = "欢迎使用酒店管理系统 当前时间是:" + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
+                Text = CommConst.WelcomsTime + DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
             }
         }
 
