@@ -8,6 +8,13 @@ namespace HotelManagerUI
 {
     public partial class FrmLogin : UIForm
     {
+        #region 获取图片验证码的变量
+
+        private string imgCode = string.Empty;
+
+        #endregion
+
+
         #region 时间字符串
         private string _TimesString = DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss");
         #endregion
