@@ -4,6 +4,7 @@ using HotelManagerComm.CommHelper;
 using Sunny.UI;
 using System.Timers;
 using HotelManagerUI.Comm;
+using System.Deployment.Application;
 
 namespace HotelManagerUI
 {
@@ -146,7 +147,12 @@ namespace HotelManagerUI
         /// <param name="e"></param>
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            string loginId = TxtLoginId.Text.Trim();
+            string loginPwd = TxtLoginPwd.Text.Trim();
+            if(CheckInput(loginId,loginPwd))
+            {
 
+            }
         }
         #endregion
 
@@ -157,7 +163,7 @@ namespace HotelManagerUI
         /// <param name="loginId"></param>
         /// <param name="loginPwd"></param>
         /// <returns></returns>
-        private bool ChenkInput(string loginId, string loginPwd)
+        private bool CheckInput(string loginId, string loginPwd)
         {
             if (loginId.Length == 0)
             {
