@@ -24,6 +24,10 @@ namespace HotelManagerComm.CommHelper
         /// 对话框标题文字内容
         /// </summary>
         protected const string Caption = "信息提示";
+        /// <summary>
+        /// 输入有误
+        /// </summary>
+        public const string InputFalse = "输入有误";
 
     }
 }

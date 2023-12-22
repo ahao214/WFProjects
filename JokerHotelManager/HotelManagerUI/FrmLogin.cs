@@ -3,6 +3,7 @@ using System.Threading;
 using HotelManagerComm.CommHelper;
 using Sunny.UI;
 using System.Timers;
+using HotelManagerUI.Comm;
 
 namespace HotelManagerUI
 {
@@ -124,7 +125,7 @@ namespace HotelManagerUI
         private void InitVerityCode()
         {
             VerifyCode code = new VerifyCode(1);
-            string strCode = code.StringCode;
+            imgCode = code.StringCode;
             PbVerifyCode.Image = code.CreateImage();
         }
 
@@ -147,6 +148,33 @@ namespace HotelManagerUI
         {
 
         }
+        #endregion
+
+        #region 输入验证
+        /// <summary>
+        /// 输入验证
+        /// </summary>
+        /// <param name="loginId"></param>
+        /// <param name="loginPwd"></param>
+        /// <returns></returns>
+        private bool ChenkInput(string loginId, string loginPwd)
+        {
+            if (loginId.Length == 0)
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFalse);
+                TxtLoginId.Focus();
+                return false;
+            }
+            if (loginPwd.Length == 0)
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFalse);
+                TxtLoginPwd.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
         #endregion
 
 
